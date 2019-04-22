@@ -37,9 +37,47 @@ header #placar2{
 }  
 
 section{
-  
     width: 80vw;
     height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section #areaJogo{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#areaJogo .linha{
+    height: 33%;
+    display: flex;
+}
+
+#areaJogo .individual{
+    height: 100%;
+    width: 33%;
+    border: 5px solid #fff;
+}
+
+.individual#AA, .individual#AB, .individual#AC{
+    border-top: 0;
+}
+
+.individual#AA, .individual#BA, .individual#CA{
+    border-left: 0;
+}
+
+.individual#AC, .individual#BC, .individual#CC{
+    border-right: 0;
+}
+
+.individual#CA, .individual#CB, .individual#CC{
+    border-bottom: 0;
+    border-top: 0;
 }
 
 footer{   
